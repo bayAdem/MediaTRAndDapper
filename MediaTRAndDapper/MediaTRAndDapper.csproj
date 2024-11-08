@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.0" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="FastEndpoints" Version="5.31.0" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Text.UI" Version="17.11.260" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Commands\OrderDatail\Query\" />
+    <Folder Include="CQRS\Commands\Order\Query\" />
+    <Folder Include="CQRS\Commands\Order\Request\" />
+    <Folder Include="CQRS\Commands\Order\Response\" />
+    <Folder Include="CQRS\Commands\OrderDatail\Request\" />
+    <Folder Include="CQRS\Commands\OrderDatail\Response\" />
+    <Folder Include="CQRS\Commands\Products\Query\" />
+    <Folder Include="CQRS\Commands\Products\Request\" />
+    <Folder Include="CQRS\Commands\Products\Response\" />
+    <Folder Include="CQRS\Handlers\CommandHandlers\" />
+    <Folder Include="CQRS\Handlers\QueryHandlers\" />
+  </ItemGroup>
+
+</Project>
